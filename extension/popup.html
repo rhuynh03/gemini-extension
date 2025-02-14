@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gemini Chatbot</title>
-  <script src="popup.js" defer></script>
-  <link rel="stylesheet" href="popup.css">
+  <title>Gemini AI Chatbot</title>
+  <link href="build/static/css/main.css" rel="stylesheet">
+  <style>
+    body {
+      width: 400px;
+      height: 600px;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 <body>
-  <h2>Gemini AI Chatbot</h2>
-  <input type="text" id="messageInput" placeholder="Ask something...">
-  <button id="sendMessage">Send</button>
-  <div id="response"></div>
+  <div id="root"></div>
+  <script src="build/static/js/main.js"></script>
 </body>
 </html>

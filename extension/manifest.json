@@ -4,12 +4,15 @@
   "version": "1.0",
   "description": "A browser extension chatbot powered by Gemini AI.",
   "permissions": ["storage", "activeTab", "scripting"],
-  "host_permissions": ["http://localhost:5000/*"], 
+  "host_permissions": ["http://localhost:5000/*"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "build/index.html",
+    "default_popup": "popup.html",
     "default_icon": "icon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
   }
 }

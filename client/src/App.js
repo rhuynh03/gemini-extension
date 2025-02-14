@@ -32,7 +32,13 @@ function App() {
   };
 
   return (
-    <Container maxWidth="md" style={{ marginTop: "50px", textAlign: "center" }}>
+    <Container maxWidth="sm" style={{ 
+      marginTop: "10px", 
+      textAlign: "center",
+      height: "580px",
+      overflow: "auto",
+      padding: "10px"
+    }}>
       <Typography variant="h4" gutterBottom>Gemini AI Chat</Typography>
 
       <TextField
