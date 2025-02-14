@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf ../extension/build && mv build ../extension/",
+    "build": "react-scripts build && rm -rf ../extension/build && mv build ../extension/ && node update-popup.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,5 +37,5 @@
     ]
   },
   "proxy": "http://localhost:5000",
-  "homepage": "."
+  "homepage": "/build"
 }
